@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> 
+    <title>Conversor de Moedas</title>
+    <link rel="shortcut icon" href="./img/conversor_img.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="container">
+        <header>Conversor de Moedas</header>
+        <form action="#">
+            <div class="valor">
+                <p>Digite um valor</p>
+                <input type="text" value="1">
+            </div>
+            <div class="listaDeConversao">
+                <div class="De">
+                    <p>De</p>
+                    <div class="caixaDeSelecao">
+                        <img src="https://flagcdn.com/48x36/br.png" alt="bandeira de países">
+                        <select id="select">
+                        </select>
+                    </div>
+                </div>
+                <div class="icone"><i class="fas fa-exchange-alt"></i></div>
+                <div class="Para">
+                    <p>Para</p>
+                    <div class="caixaDeSelecao">
+                        <img src="https://flagcdn.com/48x36/us.png" alt="bandeiras de países">
+                        <select id="select">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="resultado"></div>
+            <button type="submit">Fazer conversão</button>
+        </form>
+    </div>
+
+    <script src="./js/listaDePaises.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
